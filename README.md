@@ -1,10 +1,10 @@
 # Picture-Quest
 
-Github Repo:[Link](https://github.com/Naomie-Jerutoe/Picture-Quest.git)
+
 
 ## Author
 
-Naomi C. Lagat
+Michael Ngige
 
 ## Description
 
