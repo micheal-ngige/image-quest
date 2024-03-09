@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture-Quest</title>
+  <link rel="shortcut icon" href="/my-images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Picture <span>Quest</span></h1>
+      <p>We communicate through <span class="art">ART</span> and certainly, give the <span class="best">BEST!</span></p>
+      <p><span class="text">&gt;&gt;Search&gt;&gt;Save&gt;&gt;See</span></p>
+    </header>
+    <div class="btn-wrapper">
+      <button class="save-image" onclick="displaySavedImages()">Saved Images</button>
+    </div>
+    <div class="input">
+      <form class="my-form">
+        <input type="text" name="search" id="search" placeholder="search image here..." autocomplete="off">
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+    </div>
+    <div class="cards-list">
+      <!-- images displayed will go here -->
+    </div>
+    <div class="btn-wrapper">
+      <button class="see-more">See More</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background: darkslateblue
+}
+
+.container{
+  background:darkmagenta;
+  animation: pulse 15s infinite;
+}
+
+@keyframes pulse{
+  0%{
+    background-color: darkmagenta;
+  }
+  100%{
+    background-color: darkslateblue;
+  }
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  color:#E11599;
+  font-size: 2.0rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h1 span{
+  color: #1DA1F2;
+  font-size: 2.0rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+header p{
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+p .art{
+  color: #1DA1F2;
+}
+
+p .best{
+  color: #E11599;
+}
+
+p .text{
+  width: 12%;
+  top:10px;
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #E11599;
+  word-spacing: 5px;
+}
+
+.save-image{
+  width: 12%;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-form{
+  display: flex;
+  flex-direction: row;
+}
+
+.my-form input{
+  background: #ecf0f3;
+  padding: 5px;
+  height: 40px;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+  caret-color: red;
+  border-radius: 50px;
+}
+
+input::placeholder{
+  color: gray;
+  font-size: 12px;
+}
+
+input, button{
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+button {
+  color: white;
+  margin-top: 10px;
+  background: #1DA1F2;
+  height: 40px;
+  width: 20%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #E11599;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-pink {
+  color: #E11599;
+}
+
+.btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-more{
+  width: 8%;
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
